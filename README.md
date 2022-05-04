@@ -1,2 +1,2 @@
 # Python
-python stuff
+python stuff. still very much a beginner
