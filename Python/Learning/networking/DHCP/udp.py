@@ -45,7 +45,7 @@ server_ack_or_nack = srp1(request_packet, iface=conf.iface, verbose=False)
 
 if server_ack_or_nack[DHCP].options[0][1] == 6:
     ack_type = 'NACK'
-    print("Received DHCPACK meaning our request was not acknowledged..likely misconfiguration of the request")
+    print("Received DHCPNACK meaning our request was not acknowledged..likely misconfiguration of the request")
 
 if server_ack_or_nack[DHCP].options[0][1] == 5:
     ack_type = 'ACK'
